@@ -62,7 +62,6 @@ This is a **RESTful API** for a Library Management System (LMS) built with **Nod
 | POST   | `/api/auth/login`    | Login user & get token | Public |
 
 ### **User Routes**
-
 | Method | Endpoint            | Description      | Roles  |
 |--------|---------------------|------------------|--------|
 | GET    | `/api/users`        | Get all users    | Admin  |
@@ -71,10 +70,9 @@ This is a **RESTful API** for a Library Management System (LMS) built with **Nod
 | DELETE | `/api/users/:id`    | Delete user      | Admin  |
 | Get   |`/api/users/profile/me`|Get User Profile | User   |
 | Put   |`/api/users/profile/me`|Update user      | User   |
-|--------|---------------------|------------------|--------|
+
 
 ### **Book Routes**
-|--------|---------------------|---------------------|----------------------|
 | Method | Endpoint            | Description         | Roles                |
 |--------|---------------------|---------------------|----------------------|
 | POST   | `/api/books`        | Add a new book      | Admin                |
@@ -84,7 +82,6 @@ This is a **RESTful API** for a Library Management System (LMS) built with **Nod
 |--------|---------------------|---------------------|----------------------|
 
 ### **Borrowing Routes**
-|--------|-----------------------------------------|----------------------|--------------|
 | Method | Endpoint                                | Description          | Roles        |
 |--------|-----------------------------------------|----------------------|--------------|
 | POST   | `/api/borrows/borrow/:bookId`           | Borrow a book        | Member       |
@@ -92,7 +89,6 @@ This is a **RESTful API** for a Library Management System (LMS) built with **Nod
 | GET    | `/api/borrows`                          | Get borrowed books   | All users    |
 | POST   | `/api/borrows/librarian/borrow/:bookId` | Borrow a book        | Librarian    |  
 | POST   | `/api/borrows/librarian/return/:bookId` | Return a book        | Librarian    |
-|--------|-----------------------------------------|-------------------------------------|
 
 
 ## Postman API Testing
