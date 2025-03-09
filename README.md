@@ -79,7 +79,6 @@ This is a **RESTful API** for a Library Management System (LMS) built with **Nod
 | GET    | `/api/books`        | Get all books       | All users            |
 | PUT    | `/api/books/:id`    | Update book details | Admin                |
 | DELETE | `/api/books/:id`    | Delete a book       | Admin                |
-|--------|---------------------|---------------------|----------------------|
 
 ### **Borrowing Routes**
 | Method | Endpoint                                | Description          | Roles        |
