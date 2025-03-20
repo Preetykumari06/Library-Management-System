@@ -15,8 +15,19 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 
+const corsOptions = {
+    origin: "http://127.0.0.1:5500", 
+    methods: "GET,POST,PUT,DELETE,OPTIONS",
+    allowedHeaders: "Content-Type,Authorization",
+    credentials: true 
+};
+
+app.use(cors(corsOptions)); 
+app.options("*", cors(corsOptions)); // Handle preflight requests
+
+
 // Middleware
-app.use(cors());
+// app.use(cors());
 app.use(helmet());
 app.use(morgan('dev'));
 app.use(express.json());

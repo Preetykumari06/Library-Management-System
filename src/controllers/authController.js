@@ -29,6 +29,11 @@ exports.login = async (req, res) => {
             return res.status(401).json({ message: 'Invalid email or password' });
         }
 
+        // ✅ Check if user has a valid role
+        if (!["Admin", "Librarian", "Member"].includes(user.role)) {
+            return res.status(403).json({ error: true, msg: "Unauthorized role. Contact Admin." });
+        }
+
         const token = jwt.sign({ id: user.id, role: user.role }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         res.json({ success: true, message: 'Login successful', token });

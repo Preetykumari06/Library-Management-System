@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins;
+  color: FFFFFF;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background: #F2E1D4; */
+  background: #caf0f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.useful-links {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+
+}
+
+.useful-links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container form {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #90e0ef;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.fa-user-plus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  font-size: 26px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group label {
+  flex-basis: 28%;
+}
+
+.input-group input {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+form button {
+  background: #141a34;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 10px;
+}
+
+.input-group span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error {
+  color: red;
+}
+
+/* seagreen */
+.input-group span i {
+  color: seagreen
+}
+
+
+
+/* Style for the Role label */
+.input-group label {
+  flex-basis: 28%;
+  font-weight: bold;
+  color: #333; 
+}
+
+.input-group select {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  border-bottom: 1px solid #999;
+  color: grey;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input-group select:focus {
+  border-bottom: 1px solid #999; 
+  outline: none;
+}
+
+/* Dropdown arrow color */
+.input-group select::-ms-expand {
+  display: none;
+}
+
+/* Placeholder text color for select */
+.input-group select option {
+  color: grey;
+  background: #caf0f8;
+}

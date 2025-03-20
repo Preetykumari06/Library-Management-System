@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/auth.css">
+  <title>LMS -Sign up</title>
+  <link rel="icon" href="" type="image/icon type">
+  <meta charset="UTF-8">
+  <meta property="og:title" content="library management system.com">
+  <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+  #login {
+    margin-top: 30px;
+  }
+</style>
+<body>
+  <div class="container">
+    <form>
+      <i class="fa-solid fa-user-plus"></i>
+      <div class="input-group">
+        <label>Name</label>
+        <input onkeyup="validationName()" type="text" id="name" placeholder="Enter Your Name">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input onkeyup="validationEmail()" type="email" id="email" placeholder="Enter Your Email">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone</label>
+        <input onkeyup="validationPhone()" type="text" id="phone" placeholder="Enter Phone Number">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input onkeyup="validationPassword()" type="password" id="password" placeholder="Enter Your Password">
+        <span id="password-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Role</label>
+        <select class="form-select" id="role" required>
+            <option value="">Select a role</option>
+            <option value="Admin">Admin</option>
+            <option value="Librarian">Librarian</option>
+            <option value="Member">Member</option>
+        </select>
+    </div>
+
+      <button id="Submit">Submit</button>
+      <span id="submit-error"></span>
+      <h4 id="login">Already Have Account: <a href="./login.html">Click here to Log in</a></h4>
+    </form>
+  <div>
+
+</body>
+<script src="../js/register.js"></script>
+
+
+</html>
